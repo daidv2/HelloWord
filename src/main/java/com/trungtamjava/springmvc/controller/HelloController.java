@@ -1,4 +1,4 @@
-package com.trungtamjava.springmvc;
+package com.trungtamjava.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -16,6 +16,6 @@ public class HelloController {
     @RequestMapping(value = "/say-hello", method = RequestMethod.GET)
     public String sayHello(ModelMap map) {
         map.addAttribute("msg", "Trung tam java");
-        return "say_hello";
+        return "say-hello";
     }
 }
