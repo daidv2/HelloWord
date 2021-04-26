@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HelloController {
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String index() {
-        return "index";
+        return "hello";
     }
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @RequestMapping(value = "/say-hello", method = RequestMethod.GET)
     public String sayHello(ModelMap map) {
         map.addAttribute("msg", "Trung tam java");
-        return "hello";
+        return "say_hello";
     }
 }

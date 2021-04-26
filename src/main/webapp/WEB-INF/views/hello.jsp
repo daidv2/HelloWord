@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Say hello</title>
+<title>index</title>
 </head>
 <body>
-  <h1>Spring MVC Hello ${msg}</h1>
+  <h1>Spring MVC Hello World!</h1>
+  <a href="say-hello">hello</a>
 </body>
 </html>
